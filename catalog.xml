@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/administrador/NetBeansProjects/ParseXML/src/parsexml/localidad_TACORONTE.dtd" uri="xml-resources/jaxb/TiempoTacoronte/localidad_TACORONTE.dtd"/>
+    <system systemId="file:/home/administrador/NetBeansProjects/ParseXML/src/parsexml/localidad_38043.dtd" uri="xml-resources/jaxb/TiempoEnTacoronte/localidad_38043.dtd"/>
+    <system systemId="file:/home/administrador/NetBeansProjects/ParseXML_CREAR_CLASES_DESDE_xml_dtd/src/parseXMLfichero/localidad_38043.dtd" uri="xml-resources/jaxb/ElTiempo/localidad_38043.dtd"/>
+</catalog>

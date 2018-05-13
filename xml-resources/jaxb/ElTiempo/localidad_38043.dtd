@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/localidad_38043.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE root SYSTEM "localidad_38043.dtd">
+
+    <root>
+    ...
+    </root>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT root (origen|elaborado|nombre|provincia|prediccion)*>
+<!ATTLIST root
+    id CDATA #IMPLIED
+    version CDATA #IMPLIED
+    xmlns:xsd CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT origen (productor|web|enlace|language|copyright|nota_legal)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT productor (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT web (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT enlace (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT language (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT copyright (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nota_legal (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT elaborado (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT provincia (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT prediccion (dia)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dia (prob_precipitacion|cota_nieve_prov|estado_cielo|viento|racha_max|temperatura|sens_termica|humedad_relativa|uv_max)*>
+<!ATTLIST dia
+    fecha CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT prob_precipitacion (#PCDATA)>
+<!ATTLIST prob_precipitacion
+    periodo CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cota_nieve_prov (#PCDATA)>
+<!ATTLIST cota_nieve_prov
+    periodo CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT estado_cielo (#PCDATA)>
+<!ATTLIST estado_cielo
+    periodo CDATA #IMPLIED
+    descripcion CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT viento (direccion|velocidad)*>
+<!ATTLIST viento
+    periodo CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT direccion (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT velocidad (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT racha_max EMPTY>
+<!ATTLIST racha_max
+    periodo CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT temperatura (maxima|minima|dato)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT maxima (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT minima (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dato (#PCDATA)>
+<!ATTLIST dato
+    hora CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT sens_termica (maxima|minima|dato)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT humedad_relativa (maxima|minima|dato)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT uv_max (#PCDATA)>
